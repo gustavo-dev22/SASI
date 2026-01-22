@@ -1,0 +1,944 @@
+2026-01-01 14:30:26.349 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/ - null null
+2026-01-01 14:30:26.373 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-01 14:30:26.396 -05:00 [INF] Hosting environment: Development
+2026-01-01 14:30:26.396 -05:00 [INF] Content root path: D:\Proyectos Web\SASI
+2026-01-01 14:30:26.833 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 14:30:26.869 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-01 14:30:27.171 -05:00 [INF] Executing ViewResult, running view Login.
+2026-01-01 14:30:27.436 -05:00 [INF] Executed ViewResult - view Login executed in 274.7088ms.
+2026-01-01 14:30:27.440 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 570.583ms
+2026-01-01 14:30:27.442 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 14:30:27.463 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/ - 200 null text/html; charset=utf-8 1127.4738ms
+2026-01-01 14:30:27.495 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-01 14:30:27.499 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 4.2707ms
+2026-01-01 14:30:27.603 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_vs/browserLink - null null
+2026-01-01 14:30:27.722 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.7878ms
+2026-01-01 14:31:18.715 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - application/json 47
+2026-01-01 14:31:18.738 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 14:31:18.747 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SASI.Models.Requests.LoginRequest) on controller SASI.Controllers.API.AuthController (SASI).
+2026-01-01 14:31:20.694 -05:00 [INF] Executed DbCommand (71ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 14:31:20.992 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 14:31:21.165 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 14:31:21.610 -05:00 [INF] Executed DbCommand (32ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[IdSistema], [s].[Nombre], [s].[Activo], [r].[IdRol], [r].[Nombre], [r].[Activo], [u].[Activo], [u].[EsPrincipal], [u].[IdUsuarioSistema], [t].[IdObjeto], [t].[Nombre], [t].[Tipo], [t].[Url], [t].[Titulo], [t].[Icono], [t].[Activo], [t].[Orden], [t].[IdPadre], [t].[IdRolObjeto]
+FROM [UsuarioSistema] AS [u]
+INNER JOIN [Sistemas] AS [s] ON [u].[SistemaId] = [s].[IdSistema]
+INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+LEFT JOIN (
+    SELECT [o].[IdObjeto], [o].[Nombre], [o].[Tipo], [o].[Url], [o].[Titulo], [o].[Icono], [o].[Activo], [o].[Orden], [o].[IdPadre], [r0].[IdRolObjeto], [r0].[IdRol]
+    FROM [RolObjeto] AS [r0]
+    INNER JOIN [Objeto] AS [o] ON [r0].[IdObjeto] = [o].[IdObjeto]
+    WHERE [r0].[Activo] = CAST(1 AS bit) AND [o].[Activo] = CAST(1 AS bit)
+) AS [t] ON [r].[IdRol] = [t].[IdRol]
+WHERE [u].[UsuarioId] = @__userId_0
+ORDER BY [u].[IdUsuarioSistema], [s].[IdSistema], [r].[IdRol], [t].[Orden], [t].[IdRolObjeto]
+2026-01-01 14:31:21.641 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_IdOficina_Value_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__user_IdOficina_Value_0
+2026-01-01 14:31:21.749 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType6`7[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType7`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType4`9[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 14:31:21.797 -05:00 [INF] Executed action SASI.Controllers.API.AuthController.Login (SASI) in 3049.623ms
+2026-01-01 14:31:21.798 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 14:31:21.808 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - 200 null application/json; charset=utf-8 3093.5156ms
+2026-01-01 14:31:22.221 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 14:31:22.226 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 14:31:22.230 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 14:31:22.249 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 14:31:22.254 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 14:31:22.259 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 28.8892ms
+2026-01-01 14:31:22.259 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 14:31:22.259 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 37.663ms
+2026-01-01 14:31:22.873 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 14:31:22.874 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 14:31:22.875 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 14:31:22.879 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 14:31:22.882 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 14:31:22.884 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 9.5938ms
+2026-01-01 14:31:22.885 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 14:31:22.886 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 12.7133ms
+2026-01-01 15:08:43.409 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - application/json 47
+2026-01-01 15:08:43.411 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 15:08:43.411 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SASI.Models.Requests.LoginRequest) on controller SASI.Controllers.API.AuthController (SASI).
+2026-01-01 15:08:43.451 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 15:08:43.552 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 15:08:43.567 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 15:08:43.586 -05:00 [INF] Executed DbCommand (15ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[IdSistema], [s].[Nombre], [s].[Activo], [r].[IdRol], [r].[Nombre], [r].[Activo], [u].[Activo], [u].[EsPrincipal], [u].[IdUsuarioSistema], [t].[IdObjeto], [t].[Nombre], [t].[Tipo], [t].[Url], [t].[Titulo], [t].[Icono], [t].[Activo], [t].[Orden], [t].[IdPadre], [t].[IdRolObjeto]
+FROM [UsuarioSistema] AS [u]
+INNER JOIN [Sistemas] AS [s] ON [u].[SistemaId] = [s].[IdSistema]
+INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+LEFT JOIN (
+    SELECT [o].[IdObjeto], [o].[Nombre], [o].[Tipo], [o].[Url], [o].[Titulo], [o].[Icono], [o].[Activo], [o].[Orden], [o].[IdPadre], [r0].[IdRolObjeto], [r0].[IdRol]
+    FROM [RolObjeto] AS [r0]
+    INNER JOIN [Objeto] AS [o] ON [r0].[IdObjeto] = [o].[IdObjeto]
+    WHERE [r0].[Activo] = CAST(1 AS bit) AND [o].[Activo] = CAST(1 AS bit)
+) AS [t] ON [r].[IdRol] = [t].[IdRol]
+WHERE [u].[UsuarioId] = @__userId_0
+ORDER BY [u].[IdUsuarioSistema], [s].[IdSistema], [r].[IdRol], [t].[Orden], [t].[IdRolObjeto]
+2026-01-01 15:08:43.596 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_IdOficina_Value_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__user_IdOficina_Value_0
+2026-01-01 15:08:43.597 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType6`7[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType7`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType4`9[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 15:08:43.599 -05:00 [INF] Executed action SASI.Controllers.API.AuthController.Login (SASI) in 187.312ms
+2026-01-01 15:08:43.599 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 15:08:43.600 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - 200 null application/json; charset=utf-8 192.7176ms
+2026-01-01 15:08:43.935 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 15:08:43.935 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:08:43.935 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:08:43.940 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 15:08:43.944 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:08:43.945 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 9.874ms
+2026-01-01 15:08:43.945 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:08:43.946 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 11.0612ms
+2026-01-01 15:08:44.413 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 15:08:44.413 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:08:44.413 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:08:44.417 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 15:08:44.418 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:08:44.421 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 7.7365ms
+2026-01-01 15:08:44.421 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:08:44.421 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 8.7198ms
+2026-01-01 15:08:51.920 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 15:08:51.922 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:08:51.923 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:08:51.929 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 15:08:51.929 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:08:51.930 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 6.961ms
+2026-01-01 15:08:51.930 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:08:51.930 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 10.2326ms
+2026-01-01 15:08:54.639 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - null null
+2026-01-01 15:08:54.640 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:08:54.644 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:08:54.655 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 15:08:54.678 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 15:08:54.679 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:08:54.684 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 39.3271ms
+2026-01-01 15:08:54.684 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:08:54.684 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - 200 null application/json; charset=utf-8 46.208ms
+2026-01-01 15:14:35.234 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 15:14:35.235 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:14:35.235 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:14:35.248 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 15:14:35.252 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:14:35.261 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 26.4546ms
+2026-01-01 15:14:35.261 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:14:35.262 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 27.8489ms
+2026-01-01 15:14:38.219 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - null null
+2026-01-01 15:14:38.219 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:14:38.219 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:14:38.223 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 15:14:38.230 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 15:14:38.230 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:14:38.230 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 10.916ms
+2026-01-01 15:14:38.230 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:14:38.231 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - 200 null application/json; charset=utf-8 11.7463ms
+2026-01-01 15:23:55.197 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 15:23:55.198 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:23:55.199 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:23:55.233 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 15:23:55.234 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:23:55.234 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 35.5216ms
+2026-01-01 15:23:55.234 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:23:55.235 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 37.6389ms
+2026-01-01 15:23:57.983 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - null null
+2026-01-01 15:23:57.983 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:23:57.983 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:23:58.003 -05:00 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 15:23:58.048 -05:00 [INF] Executed DbCommand (16ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 15:23:58.049 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:23:58.049 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 65.6448ms
+2026-01-01 15:23:58.049 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:23:58.049 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - 200 null application/json; charset=utf-8 66.3447ms
+2026-01-01 15:34:08.680 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 15:34:08.681 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:34:08.682 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:34:08.713 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 15:34:08.713 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:34:08.714 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 32.2755ms
+2026-01-01 15:34:08.714 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:34:08.715 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 34.2546ms
+2026-01-01 15:34:20.781 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 15:34:20.782 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:34:20.782 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:34:20.785 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 15:34:20.786 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:34:20.796 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 14.1377ms
+2026-01-01 15:34:20.796 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:34:20.797 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 16.0622ms
+2026-01-01 15:34:22.969 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - null null
+2026-01-01 15:34:22.970 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:34:22.970 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:34:22.974 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 15:34:22.982 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 15:34:22.982 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:34:22.983 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 13.5098ms
+2026-01-01 15:34:22.983 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:34:22.984 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - 200 null application/json; charset=utf-8 15.0549ms
+2026-01-01 15:47:08.556 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 15:47:08.557 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:47:08.557 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:47:08.587 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 15:47:08.588 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:47:08.588 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 31.1484ms
+2026-01-01 15:47:08.589 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 15:47:08.589 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 33.1188ms
+2026-01-01 15:49:18.729 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/15/usuarios - null null
+2026-01-01 15:49:18.730 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:49:18.730 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:49:18.743 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 15:49:18.751 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 15:49:18.751 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:49:18.752 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 21.5859ms
+2026-01-01 15:49:18.752 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:49:18.752 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/15/usuarios - 200 null application/json; charset=utf-8 23.142ms
+2026-01-01 15:51:33.669 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - null null
+2026-01-01 15:51:33.670 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:51:33.670 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 15:51:33.684 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 15:51:33.691 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 15:51:33.692 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 15:51:33.693 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 22.2556ms
+2026-01-01 15:51:33.693 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 15:51:33.693 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/12/usuarios - 200 null application/json; charset=utf-8 24.0266ms
+2026-01-01 16:30:06.105 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 16:30:06.106 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 16:30:06.106 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 16:30:06.133 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 16:30:06.133 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 16:30:06.134 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 27.8506ms
+2026-01-01 16:30:06.135 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 16:30:06.136 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 30.7254ms
+2026-01-01 16:30:09.216 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/13/usuarios - null null
+2026-01-01 16:30:09.217 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 16:30:09.217 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 16:30:09.220 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 16:30:09.230 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 16:30:09.231 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 16:30:09.232 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 15.6551ms
+2026-01-01 16:30:09.232 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 16:30:09.233 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/13/usuarios - 200 null application/json; charset=utf-8 16.8284ms
+2026-01-01 16:30:27.170 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 16:30:27.171 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 16:30:27.171 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 16:30:27.178 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 16:30:27.207 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 16:30:27.213 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 42.4245ms
+2026-01-01 16:30:27.213 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 16:30:27.213 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 43.1653ms
+2026-01-01 16:30:29.202 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/16/usuarios - null null
+2026-01-01 16:30:29.202 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 16:30:29.202 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 16:30:29.205 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 16:30:29.209 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 16:30:29.210 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 16:30:29.215 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 12.4557ms
+2026-01-01 16:30:29.215 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 16:30:29.215 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/16/usuarios - 200 null application/json; charset=utf-8 13.1621ms
+2026-01-01 16:30:32.013 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/15/usuarios - null null
+2026-01-01 16:30:32.013 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 16:30:32.013 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 16:30:32.015 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 16:30:32.021 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 16:30:32.021 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 16:30:32.022 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 8.8128ms
+2026-01-01 16:30:32.022 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 16:30:32.022 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/15/usuarios - 200 null application/json; charset=utf-8 9.5197ms
+2026-01-01 16:30:35.425 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 16:30:35.426 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 16:30:35.426 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 16:30:35.430 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 16:30:35.432 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 16:30:35.432 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 5.7306ms
+2026-01-01 16:30:35.432 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 16:30:35.432 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 7.9791ms
+2026-01-01 16:30:37.091 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/6/usuarios - null null
+2026-01-01 16:30:37.091 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 16:30:37.091 -05:00 [INF] Route matched with {action = "ObtenerUsuariosPorOficina", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerUsuariosPorOficina(Int32) on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 16:30:37.095 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__id_0
+2026-01-01 16:30:37.099 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__idOficina_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UsuarioId], [a].[NombreCompleto], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IdOficina] = @__idOficina_0
+2026-01-01 16:30:37.099 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType16`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 16:30:37.100 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI) in 8.7071ms
+2026-01-01 16:30:37.100 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.ObtenerUsuariosPorOficina (SASI)'
+2026-01-01 16:30:37.100 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/6/usuarios - 200 null application/json; charset=utf-8 9.5026ms
+2026-01-01 18:30:59.662 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - application/json 47
+2026-01-01 18:30:59.664 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 18:30:59.665 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SASI.Models.Requests.LoginRequest) on controller SASI.Controllers.API.AuthController (SASI).
+2026-01-01 18:30:59.774 -05:00 [INF] Executed DbCommand (20ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:30:59.866 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:30:59.880 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 18:30:59.941 -05:00 [INF] Executed DbCommand (27ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[IdSistema], [s].[Nombre], [s].[Activo], [r].[IdRol], [r].[Nombre], [r].[Activo], [u].[Activo], [u].[EsPrincipal], [u].[IdUsuarioSistema], [t].[IdObjeto], [t].[Nombre], [t].[Tipo], [t].[Url], [t].[Titulo], [t].[Icono], [t].[Activo], [t].[Orden], [t].[IdPadre], [t].[IdRolObjeto]
+FROM [UsuarioSistema] AS [u]
+INNER JOIN [Sistemas] AS [s] ON [u].[SistemaId] = [s].[IdSistema]
+INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+LEFT JOIN (
+    SELECT [o].[IdObjeto], [o].[Nombre], [o].[Tipo], [o].[Url], [o].[Titulo], [o].[Icono], [o].[Activo], [o].[Orden], [o].[IdPadre], [r0].[IdRolObjeto], [r0].[IdRol]
+    FROM [RolObjeto] AS [r0]
+    INNER JOIN [Objeto] AS [o] ON [r0].[IdObjeto] = [o].[IdObjeto]
+    WHERE [r0].[Activo] = CAST(1 AS bit) AND [o].[Activo] = CAST(1 AS bit)
+) AS [t] ON [r].[IdRol] = [t].[IdRol]
+WHERE [u].[UsuarioId] = @__userId_0
+ORDER BY [u].[IdUsuarioSistema], [s].[IdSistema], [r].[IdRol], [t].[Orden], [t].[IdRolObjeto]
+2026-01-01 18:30:59.945 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_IdOficina_Value_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__user_IdOficina_Value_0
+2026-01-01 18:30:59.946 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType6`7[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType7`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType4`9[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 18:30:59.947 -05:00 [INF] Executed action SASI.Controllers.API.AuthController.Login (SASI) in 282.0954ms
+2026-01-01 18:30:59.947 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 18:30:59.948 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - 200 null application/json; charset=utf-8 286.908ms
+2026-01-01 18:31:00.357 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 18:31:00.357 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 18:31:00.357 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 18:31:00.361 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 18:31:00.362 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 18:31:00.363 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 5.9453ms
+2026-01-01 18:31:00.363 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 18:31:00.364 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 7.3252ms
+2026-01-01 18:31:00.869 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 18:31:00.869 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 18:31:00.869 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 18:31:00.872 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 18:31:00.874 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 18:31:00.874 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 4.5553ms
+2026-01-01 18:31:00.874 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 18:31:00.874 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 5.2037ms
+2026-01-01 18:31:28.872 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44337/Cuenta/Login - application/x-www-form-urlencoded; charset=UTF-8 226
+2026-01-01 18:31:28.889 -05:00 [INF] CORS policy execution failed.
+2026-01-01 18:31:28.889 -05:00 [INF] Request origin https://localhost:44337 does not have permission to access the resource.
+2026-01-01 18:31:28.891 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 18:31:28.897 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-01 18:31:28.947 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-01 18:31:29.002 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid), @__sistemaId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UsuarioSistema] AS [u]
+        INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+        WHERE [u].[UsuarioId] = @__usuarioId_0 AND [u].[SistemaId] = @__sistemaId_1 AND [r].[Activo] = CAST(1 AS bit) AND [u].[Activo] = CAST(1 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-01-01 18:31:29.113 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2026-01-01 18:31:29.137 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-01 18:31:29.143 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-01-01 18:31:29.146 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:31:29.148 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 18:31:29.153 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_IdOficina_Value_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__user_IdOficina_Value_0
+2026-01-01 18:31:29.155 -05:00 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType24`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 18:31:29.159 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 261.6412ms
+2026-01-01 18:31:29.159 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 18:31:29.160 -05:00 [INF] Session started; Key:94df2849-4b0b-c202-a79d-4f7dc4ae33bd, Id:b992c2da-1de3-348a-d165-3cf4fa7d6285
+2026-01-01 18:31:29.162 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44337/Cuenta/Login - 200 null application/json; charset=utf-8 289.973ms
+2026-01-01 18:31:29.168 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/Cuenta/ObtenerTokenAntiForgery - null null
+2026-01-01 18:31:29.177 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.ObtenerTokenAntiForgery (SASI)'
+2026-01-01 18:31:29.180 -05:00 [INF] Route matched with {action = "ObtenerTokenAntiForgery", controller = "Cuenta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ObtenerTokenAntiForgery() on controller SASI.Controllers.CuentaController (SASI).
+2026-01-01 18:31:29.182 -05:00 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType27`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 18:31:29.184 -05:00 [INF] Executed action SASI.Controllers.CuentaController.ObtenerTokenAntiForgery (SASI) in 3.4604ms
+2026-01-01 18:31:29.184 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.ObtenerTokenAntiForgery (SASI)'
+2026-01-01 18:31:29.184 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/Cuenta/ObtenerTokenAntiForgery - 200 null application/json; charset=utf-8 15.6345ms
+2026-01-01 18:31:46.038 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44337/SASI/Cuenta/CambiarPasswordObligatorio - application/x-www-form-urlencoded 302
+2026-01-01 18:31:46.054 -05:00 [INF] CORS policy execution failed.
+2026-01-01 18:31:46.054 -05:00 [INF] Request origin https://localhost:44337 does not have permission to access the resource.
+2026-01-01 18:31:46.056 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.CambiarPasswordObligatorio (SASI)'
+2026-01-01 18:31:46.063 -05:00 [INF] Route matched with {action = "CambiarPasswordObligatorio", controller = "Cuenta"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CambiarPasswordObligatorio(System.String, System.String, System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-01 18:31:46.079 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-01 18:31:46.193 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:31:46.199 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 18:31:46.202 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:31:46.206 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 18:31:46.207 -05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2026-01-01 18:31:46.210 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-01-01 18:31:46.210 -05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2026-01-01 18:31:46.211 -05:00 [INF] Executing RedirectResult, redirecting to /SASI.
+2026-01-01 18:31:46.212 -05:00 [INF] Executed action SASI.Controllers.CuentaController.CambiarPasswordObligatorio (SASI) in 148.9447ms
+2026-01-01 18:31:46.212 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.CambiarPasswordObligatorio (SASI)'
+2026-01-01 18:31:46.213 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44337/SASI/Cuenta/CambiarPasswordObligatorio - 302 null null 175.6738ms
+2026-01-01 18:31:46.218 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI - null null
+2026-01-01 18:31:46.221 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 18:31:46.221 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-01 18:31:46.222 -05:00 [INF] Executing ViewResult, running view Login.
+2026-01-01 18:31:46.237 -05:00 [INF] Executed ViewResult - view Login executed in 15.6554ms.
+2026-01-01 18:31:46.237 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 16.084ms
+2026-01-01 18:31:46.237 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 18:31:46.238 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI - 200 null text/html; charset=utf-8 20.0864ms
+2026-01-01 18:31:46.285 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/SASI.styles.css?v=2hI1CUQYf_TEuYesGYzRd7utCNGXmlVh7z6VwzuY2v4 - null null
+2026-01-01 18:31:46.320 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-01-01 18:31:46.325 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/css/site.css?v=9lJ9cOjo8Wn_LKuUNCz3oh3IWCWVLYqVf1fDFOyBN0Y - null null
+2026-01-01 18:31:46.328 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/lib/jquery/dist/jquery.min.js - null null
+2026-01-01 18:31:46.330 -05:00 [INF] Sending file. Request path: '/SASI.styles.css'. Physical path: 'D:\Proyectos Web\SASI\obj\Debug\net8.0\scopedcss\bundle\SASI.styles.css'
+2026-01-01 18:31:46.330 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/SASI.styles.css?v=2hI1CUQYf_TEuYesGYzRd7utCNGXmlVh7z6VwzuY2v4 - 200 1122 text/css 45.0578ms
+2026-01-01 18:31:46.337 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-01-01 18:31:46.337 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_vs/browserLink - null null
+2026-01-01 18:31:46.344 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/js/site.js?v=4fwQrBE55Gzwg6Dlpi6bPvqcs-QU8uqNF3W_o4RLcOw - null null
+2026-01-01 18:31:46.347 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-01 18:31:46.351 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 5.6735ms
+2026-01-01 18:31:46.359 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'D:\Proyectos Web\SASI\wwwroot\css\site.css'
+2026-01-01 18:31:46.359 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/css/site.css?v=9lJ9cOjo8Wn_LKuUNCz3oh3IWCWVLYqVf1fDFOyBN0Y - 200 2516 text/css 33.4111ms
+2026-01-01 18:31:46.371 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'D:\Proyectos Web\SASI\wwwroot\js\site.js'
+2026-01-01 18:31:46.371 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/js/site.js?v=4fwQrBE55Gzwg6Dlpi6bPvqcs-QU8uqNF3W_o4RLcOw - 200 1394 text/javascript 27.5127ms
+2026-01-01 18:31:46.379 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'D:\Proyectos Web\SASI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-01-01 18:31:46.381 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'D:\Proyectos Web\SASI\wwwroot\lib\jquery\dist\jquery.min.js'
+2026-01-01 18:31:46.390 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\Proyectos Web\SASI\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-01-01 18:31:46.390 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 53.3391ms
+2026-01-01 18:31:46.390 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 61.9471ms
+2026-01-01 18:31:46.393 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 93.1569ms
+2026-01-01 18:31:46.394 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.25ms
+2026-01-01 18:31:46.590 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/favicon.png - null null
+2026-01-01 18:31:46.596 -05:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'D:\Proyectos Web\SASI\wwwroot\favicon.png'
+2026-01-01 18:31:46.596 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/favicon.png - 200 1730 image/png 6.3816ms
+2026-01-01 18:31:47.352 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44337/Cuenta/Login - application/x-www-form-urlencoded; charset=UTF-8 226
+2026-01-01 18:31:47.352 -05:00 [INF] CORS policy execution failed.
+2026-01-01 18:31:47.352 -05:00 [INF] Request origin https://localhost:44337 does not have permission to access the resource.
+2026-01-01 18:31:47.352 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 18:31:47.352 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-01 18:31:47.357 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2026-01-01 18:31:47.367 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid), @__sistemaId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UsuarioSistema] AS [u]
+        INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+        WHERE [u].[UsuarioId] = @__usuarioId_0 AND [u].[SistemaId] = @__sistemaId_1 AND [r].[Activo] = CAST(1 AS bit) AND [u].[Activo] = CAST(1 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-01-01 18:31:47.468 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2026-01-01 18:31:47.473 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-01-01 18:31:47.473 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-01-01 18:31:47.475 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:31:47.477 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 18:31:47.480 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_IdOficina_Value_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__user_IdOficina_Value_0
+2026-01-01 18:31:47.494 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__idUsuario_0='?' (DbType = Guid), @__idSistema_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[RolId]
+FROM [UsuarioSistema] AS [u]
+WHERE [u].[UsuarioId] = @__idUsuario_0 AND [u].[SistemaId] = @__idSistema_1
+ORDER BY [u].[EsPrincipal] DESC
+2026-01-01 18:31:47.516 -05:00 [INF] Start processing HTTP request POST https://localhost:44337/SASI/api/Auth/login
+2026-01-01 18:31:47.518 -05:00 [INF] Sending HTTP request POST https://localhost:44337/SASI/api/Auth/login
+2026-01-01 18:31:47.635 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - application/json; charset=utf-8 null
+2026-01-01 18:31:47.635 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 18:31:47.635 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SASI.Models.Requests.LoginRequest) on controller SASI.Controllers.API.AuthController (SASI).
+2026-01-01 18:31:47.638 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:31:47.722 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:31:47.724 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 18:31:47.756 -05:00 [INF] Executed DbCommand (29ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[IdSistema], [s].[Nombre], [s].[Activo], [r].[IdRol], [r].[Nombre], [r].[Activo], [u].[Activo], [u].[EsPrincipal], [u].[IdUsuarioSistema], [t].[IdObjeto], [t].[Nombre], [t].[Tipo], [t].[Url], [t].[Titulo], [t].[Icono], [t].[Activo], [t].[Orden], [t].[IdPadre], [t].[IdRolObjeto]
+FROM [UsuarioSistema] AS [u]
+INNER JOIN [Sistemas] AS [s] ON [u].[SistemaId] = [s].[IdSistema]
+INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+LEFT JOIN (
+    SELECT [o].[IdObjeto], [o].[Nombre], [o].[Tipo], [o].[Url], [o].[Titulo], [o].[Icono], [o].[Activo], [o].[Orden], [o].[IdPadre], [r0].[IdRolObjeto], [r0].[IdRol]
+    FROM [RolObjeto] AS [r0]
+    INNER JOIN [Objeto] AS [o] ON [r0].[IdObjeto] = [o].[IdObjeto]
+    WHERE [r0].[Activo] = CAST(1 AS bit) AND [o].[Activo] = CAST(1 AS bit)
+) AS [t] ON [r].[IdRol] = [t].[IdRol]
+WHERE [u].[UsuarioId] = @__userId_0
+ORDER BY [u].[IdUsuarioSistema], [s].[IdSistema], [r].[IdRol], [t].[Orden], [t].[IdRolObjeto]
+2026-01-01 18:31:47.757 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_IdOficina_Value_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__user_IdOficina_Value_0
+2026-01-01 18:31:47.757 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType6`7[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType7`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType4`9[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 18:31:47.759 -05:00 [INF] Executed action SASI.Controllers.API.AuthController.Login (SASI) in 123.8596ms
+2026-01-01 18:31:47.759 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 18:31:47.760 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - 200 null application/json; charset=utf-8 125.959ms
+2026-01-01 18:31:47.774 -05:00 [INF] Received HTTP response headers after 246.5333ms - 200
+2026-01-01 18:31:47.776 -05:00 [INF] End processing HTTP request after 261.4537ms - 200
+2026-01-01 18:31:47.907 -05:00 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType25`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 18:31:47.908 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 555.9653ms
+2026-01-01 18:31:47.908 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 18:31:47.909 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44337/Cuenta/Login - 200 null application/json; charset=utf-8 557.0372ms
+2026-01-01 18:31:47.930 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/Home/Index - null null
+2026-01-01 18:31:47.937 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-01-01 18:31:47.944 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-01-01 18:31:47.945 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/Home/Index - 302 null null 14.7003ms
+2026-01-01 18:31:47.948 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI - null null
+2026-01-01 18:31:47.953 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 18:31:47.953 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-01 18:31:47.955 -05:00 [INF] Executing RedirectResult, redirecting to /SASI/Home/Index.
+2026-01-01 18:31:47.955 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 1.7617ms
+2026-01-01 18:31:47.955 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-01 18:31:47.955 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI - 302 null null 6.9914ms
+2026-01-01 18:31:47.961 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/Home/Index - null null
+2026-01-01 18:31:47.966 -05:00 [INF] Executing endpoint 'SASI.Controllers.HomeController.Index (SASI)'
+2026-01-01 18:31:47.967 -05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller SASI.Controllers.HomeController (SASI).
+2026-01-01 18:31:47.997 -05:00 [INF] Executing ViewResult, running view Index.
+2026-01-01 18:31:48.044 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid), @__sistemaId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[IdRol], [r].[Activo], [r].[AuditFechaCreacion], [r].[AuditFechaModificacion], [r].[AuditUsuarioCreacion], [r].[AuditUsuarioModificacion], [r].[IdSistema], [r].[IpCreacion], [r].[IpModificacion], [r].[Nombre]
+FROM [UsuarioSistema] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+WHERE [u].[UsuarioId] = @__usuarioId_0 AND [u].[SistemaId] = @__sistemaId_1 AND [u].[Activo] = CAST(1 AS bit) AND [r].[Activo] = CAST(1 AS bit)
+2026-01-01 18:31:48.095 -05:00 [INF] Executed ViewResult - view Index executed in 98.6937ms.
+2026-01-01 18:31:48.096 -05:00 [INF] Executed action SASI.Controllers.HomeController.Index (SASI) in 128.6928ms
+2026-01-01 18:31:48.096 -05:00 [INF] Executed endpoint 'SASI.Controllers.HomeController.Index (SASI)'
+2026-01-01 18:31:48.096 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/Home/Index - 200 null text/html; charset=utf-8 135.3326ms
+2026-01-01 18:31:48.127 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_vs/browserLink - null null
+2026-01-01 18:31:48.144 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-01 18:31:48.144 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 0.52ms
+2026-01-01 18:31:48.176 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.5193ms
+2026-01-01 18:31:52.066 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/GestionUsuarios/Index - null null
+2026-01-01 18:31:52.073 -05:00 [INF] Executing endpoint 'SASI.Controllers.GestionUsuariosController.Index (SASI)'
+2026-01-01 18:31:52.074 -05:00 [INF] Route matched with {action = "Index", controller = "GestionUsuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller SASI.Controllers.GestionUsuariosController (SASI).
+2026-01-01 18:31:52.076 -05:00 [INF] Executing ViewResult, running view Index.
+2026-01-01 18:31:52.093 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid), @__sistemaId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[IdRol], [r].[Activo], [r].[AuditFechaCreacion], [r].[AuditFechaModificacion], [r].[AuditUsuarioCreacion], [r].[AuditUsuarioModificacion], [r].[IdSistema], [r].[IpCreacion], [r].[IpModificacion], [r].[Nombre]
+FROM [UsuarioSistema] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+WHERE [u].[UsuarioId] = @__usuarioId_0 AND [u].[SistemaId] = @__sistemaId_1 AND [u].[Activo] = CAST(1 AS bit) AND [r].[Activo] = CAST(1 AS bit)
+2026-01-01 18:31:52.098 -05:00 [INF] Executed ViewResult - view Index executed in 22.526ms.
+2026-01-01 18:31:52.098 -05:00 [INF] Executed action SASI.Controllers.GestionUsuariosController.Index (SASI) in 23.7175ms
+2026-01-01 18:31:52.098 -05:00 [INF] Executed endpoint 'SASI.Controllers.GestionUsuariosController.Index (SASI)'
+2026-01-01 18:31:52.099 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/GestionUsuarios/Index - 200 null text/html; charset=utf-8 32.9989ms
+2026-01-01 18:31:52.141 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_vs/browserLink - null null
+2026-01-01 18:31:52.143 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-01 18:31:52.143 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 0.505ms
+2026-01-01 18:31:52.169 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.7185ms
+2026-01-01 18:31:52.217 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/Oficina/Listar - null null
+2026-01-01 18:31:52.218 -05:00 [INF] Executing endpoint 'SASI.Controllers.OficinaController.Listar (SASI)'
+2026-01-01 18:31:52.220 -05:00 [INF] Route matched with {action = "Listar", controller = "Oficina"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Listar() on controller SASI.Controllers.OficinaController (SASI).
+2026-01-01 18:31:52.290 -05:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 18:31:52.293 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SASI.Dominio.Modelo.Oficina, SASI.Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 18:31:52.296 -05:00 [INF] Executed action SASI.Controllers.OficinaController.Listar (SASI) in 75.5585ms
+2026-01-01 18:31:52.296 -05:00 [INF] Executed endpoint 'SASI.Controllers.OficinaController.Listar (SASI)'
+2026-01-01 18:31:52.296 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/Oficina/Listar - 200 null application/json; charset=utf-8 79.1736ms
+2026-01-01 18:33:58.795 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44337/SASI/GestionUsuarios/Buscar - application/x-www-form-urlencoded; charset=UTF-8 12
+2026-01-01 18:33:58.797 -05:00 [INF] CORS policy execution failed.
+2026-01-01 18:33:58.797 -05:00 [INF] Request origin https://localhost:44337 does not have permission to access the resource.
+2026-01-01 18:33:58.798 -05:00 [INF] Executing endpoint 'SASI.Controllers.GestionUsuariosController.Buscar (SASI)'
+2026-01-01 18:33:58.803 -05:00 [INF] Route matched with {action = "Buscar", controller = "GestionUsuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Buscar(System.String) on controller SASI.Controllers.GestionUsuariosController (SASI).
+2026-01-01 18:33:58.877 -05:00 [INF] Executed DbCommand (33ms) [Parameters=[@__filtro_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NombreCompleto] LIKE @__filtro_0_contains ESCAPE N'\'
+2026-01-01 18:33:58.878 -05:00 [INF] Executing PartialViewResult, running view _TablaUsuarios.
+2026-01-01 18:33:58.880 -05:00 [INF] Executed PartialViewResult - view _TablaUsuarios executed in 1.3724ms.
+2026-01-01 18:33:58.880 -05:00 [INF] Executed action SASI.Controllers.GestionUsuariosController.Buscar (SASI) in 76.9481ms
+2026-01-01 18:33:58.880 -05:00 [INF] Executed endpoint 'SASI.Controllers.GestionUsuariosController.Buscar (SASI)'
+2026-01-01 18:33:58.880 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44337/SASI/GestionUsuarios/Buscar - 200 null text/html; charset=utf-8 85.0759ms
+2026-01-01 18:34:04.514 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44337/SASI/GestionUsuarios/Buscar - application/x-www-form-urlencoded; charset=UTF-8 12
+2026-01-01 18:34:04.514 -05:00 [INF] CORS policy execution failed.
+2026-01-01 18:34:04.514 -05:00 [INF] Request origin https://localhost:44337 does not have permission to access the resource.
+2026-01-01 18:34:04.514 -05:00 [INF] Executing endpoint 'SASI.Controllers.GestionUsuariosController.Buscar (SASI)'
+2026-01-01 18:34:04.514 -05:00 [INF] Route matched with {action = "Buscar", controller = "GestionUsuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Buscar(System.String) on controller SASI.Controllers.GestionUsuariosController (SASI).
+2026-01-01 18:34:04.525 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__filtro_0_contains='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NombreCompleto] LIKE @__filtro_0_contains ESCAPE N'\'
+2026-01-01 18:34:04.526 -05:00 [INF] Executing PartialViewResult, running view _TablaUsuarios.
+2026-01-01 18:34:04.530 -05:00 [INF] Executed PartialViewResult - view _TablaUsuarios executed in 3.2487ms.
+2026-01-01 18:34:04.530 -05:00 [INF] Executed action SASI.Controllers.GestionUsuariosController.Buscar (SASI) in 15.6182ms
+2026-01-01 18:34:04.530 -05:00 [INF] Executed endpoint 'SASI.Controllers.GestionUsuariosController.Buscar (SASI)'
+2026-01-01 18:34:04.530 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44337/SASI/GestionUsuarios/Buscar - 200 null text/html; charset=utf-8 16.3588ms
+2026-01-01 18:34:10.367 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/GestionUsuarios/ObtenerSistemas - null null
+2026-01-01 18:34:10.368 -05:00 [INF] Executing endpoint 'SASI.Controllers.GestionUsuariosController.ObtenerSistemas (SASI)'
+2026-01-01 18:34:10.436 -05:00 [INF] Route matched with {action = "ObtenerSistemas", controller = "GestionUsuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerSistemas() on controller SASI.Controllers.GestionUsuariosController (SASI).
+2026-01-01 18:34:10.483 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[IdSistema], [s].[Activo], [s].[AuditFechaCreacion], [s].[AuditFechaModificacion], [s].[AuditUsuarioCreacion], [s].[AuditUsuarioModificacion], [s].[Codigo], [s].[Descripcion], [s].[FechaRegistro], [s].[IpCreacion], [s].[IpModificacion], [s].[Nombre], [r].[IdRol], [r].[Activo], [r].[AuditFechaCreacion], [r].[AuditFechaModificacion], [r].[AuditUsuarioCreacion], [r].[AuditUsuarioModificacion], [r].[IdSistema], [r].[IpCreacion], [r].[IpModificacion], [r].[Nombre]
+FROM [Sistemas] AS [s]
+LEFT JOIN [Roles] AS [r] ON [s].[IdSistema] = [r].[IdSistema]
+ORDER BY [s].[FechaRegistro] DESC, [s].[IdSistema]
+2026-01-01 18:34:10.514 -05:00 [INF] Executing JsonResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[SASI.Dominio.Modelo.Sistema, SASI.Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType30`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 18:34:10.517 -05:00 [INF] Executed action SASI.Controllers.GestionUsuariosController.ObtenerSistemas (SASI) in 81.1813ms
+2026-01-01 18:34:10.517 -05:00 [INF] Executed endpoint 'SASI.Controllers.GestionUsuariosController.ObtenerSistemas (SASI)'
+2026-01-01 18:34:10.518 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/GestionUsuarios/ObtenerSistemas - 200 null application/json; charset=utf-8 150.3399ms
+2026-01-01 18:34:15.728 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/GestionUsuarios/ObtenerRolesPorSistema?sistemaId=4 - null null
+2026-01-01 18:34:15.730 -05:00 [INF] Executing endpoint 'SASI.Controllers.GestionUsuariosController.ObtenerRolesPorSistema (SASI)'
+2026-01-01 18:34:15.734 -05:00 [INF] Route matched with {action = "ObtenerRolesPorSistema", controller = "GestionUsuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ObtenerRolesPorSistema(Int32) on controller SASI.Controllers.GestionUsuariosController (SASI).
+2026-01-01 18:34:15.746 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__sistemaId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[IdRol], [r].[Activo], [r].[AuditFechaCreacion], [r].[AuditFechaModificacion], [r].[AuditUsuarioCreacion], [r].[AuditUsuarioModificacion], [r].[IdSistema], [r].[IpCreacion], [r].[IpModificacion], [r].[Nombre]
+FROM [Roles] AS [r]
+WHERE [r].[IdSistema] = @__sistemaId_0
+2026-01-01 18:34:15.747 -05:00 [INF] Executing JsonResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[SASI.Dominio.Modelo.Rol, SASI.Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType31`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 18:34:15.749 -05:00 [INF] Executed action SASI.Controllers.GestionUsuariosController.ObtenerRolesPorSistema (SASI) in 14.8822ms
+2026-01-01 18:34:15.749 -05:00 [INF] Executed endpoint 'SASI.Controllers.GestionUsuariosController.ObtenerRolesPorSistema (SASI)'
+2026-01-01 18:34:15.749 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/GestionUsuarios/ObtenerRolesPorSistema?sistemaId=4 - 200 null application/json; charset=utf-8 20.6028ms
+2026-01-01 18:34:19.776 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44337/SASI/GestionUsuarios/AsignarSistemaARol - application/x-www-form-urlencoded; charset=UTF-8 83
+2026-01-01 18:34:19.776 -05:00 [INF] CORS policy execution failed.
+2026-01-01 18:34:19.776 -05:00 [INF] Request origin https://localhost:44337 does not have permission to access the resource.
+2026-01-01 18:34:19.777 -05:00 [INF] Executing endpoint 'SASI.Controllers.GestionUsuariosController.AsignarSistemaARol (SASI)'
+2026-01-01 18:34:19.782 -05:00 [INF] Route matched with {action = "AsignarSistemaARol", controller = "GestionUsuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AsignarSistemaARol(SASI.Models.Requests.UsuarioSistemaRequest) on controller SASI.Controllers.GestionUsuariosController (SASI).
+2026-01-01 18:34:19.821 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__get_Item_0
+2026-01-01 18:34:19.832 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__usuarioGuid_0='?' (DbType = Guid), @__sistemaId_1='?' (DbType = Int32), @__rolId_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UsuarioSistema] AS [u]
+        WHERE [u].[UsuarioId] = @__usuarioGuid_0 AND [u].[SistemaId] = @__sistemaId_1 AND [u].[RolId] = @__rolId_2) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-01-01 18:34:19.843 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__usuarioGuid_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[IdUsuarioSistema], [u].[Activo], [u].[EsPrincipal], [u].[FechaAsignacion], [u].[RolId], [u].[SistemaId], [u].[UsuarioId]
+FROM [UsuarioSistema] AS [u]
+WHERE [u].[UsuarioId] = @__usuarioGuid_0 AND [u].[EsPrincipal] = CAST(1 AS bit)
+2026-01-01 18:34:19.892 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UsuarioSistema] ([Activo], [EsPrincipal], [FechaAsignacion], [RolId], [SistemaId], [UsuarioId])
+OUTPUT INSERTED.[IdUsuarioSistema]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-01-01 18:34:19.909 -05:00 [INF] Executing JsonResult, writing value of type '<>f__AnonymousType28`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 18:34:19.910 -05:00 [INF] Executed action SASI.Controllers.GestionUsuariosController.AsignarSistemaARol (SASI) in 127.7155ms
+2026-01-01 18:34:19.910 -05:00 [INF] Executed endpoint 'SASI.Controllers.GestionUsuariosController.AsignarSistemaARol (SASI)'
+2026-01-01 18:34:19.910 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44337/SASI/GestionUsuarios/AsignarSistemaARol - 200 null application/json; charset=utf-8 134.5139ms
+2026-01-01 18:34:23.088 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/SASI/GestionUsuarios/ListarSistemasPorUsuario?id=bced2ae4-7ae9-4ebd-5ad1-08ddf5aa1252 - null null
+2026-01-01 18:34:23.088 -05:00 [INF] Executing endpoint 'SASI.Controllers.GestionUsuariosController.ListarSistemasPorUsuario (SASI)'
+2026-01-01 18:34:23.091 -05:00 [INF] Route matched with {action = "ListarSistemasPorUsuario", controller = "GestionUsuarios"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarSistemasPorUsuario(System.Guid) on controller SASI.Controllers.GestionUsuariosController (SASI).
+2026-01-01 18:34:23.104 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__usuarioId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[SistemaId], [s].[Nombre] AS [NombreSistema], [u].[RolId], [r].[Nombre] AS [NombreRol], [u].[FechaAsignacion], [u].[Activo], [u].[EsPrincipal]
+FROM [UsuarioSistema] AS [u]
+INNER JOIN [Sistemas] AS [s] ON [u].[SistemaId] = [s].[IdSistema]
+INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+WHERE [u].[UsuarioId] = @__usuarioId_0
+ORDER BY [s].[Nombre], [r].[Nombre]
+2026-01-01 18:34:23.105 -05:00 [INF] Executing JsonResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[SASI.Dominio.DTO.SistemaAsignadoDto, SASI.Dominio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType32`7[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 18:34:23.112 -05:00 [INF] Executed action SASI.Controllers.GestionUsuariosController.ListarSistemasPorUsuario (SASI) in 20.9165ms
+2026-01-01 18:34:23.112 -05:00 [INF] Executed endpoint 'SASI.Controllers.GestionUsuariosController.ListarSistemasPorUsuario (SASI)'
+2026-01-01 18:34:23.112 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/SASI/GestionUsuarios/ListarSistemasPorUsuario?id=bced2ae4-7ae9-4ebd-5ad1-08ddf5aa1252 - 200 null application/json; charset=utf-8 24.2212ms
+2026-01-01 18:34:37.410 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - application/json 44
+2026-01-01 18:34:37.410 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 18:34:37.410 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SASI.Models.Requests.LoginRequest) on controller SASI.Controllers.API.AuthController (SASI).
+2026-01-01 18:34:37.415 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:34:37.509 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 18:34:37.519 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 18:34:37.533 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[IdSistema], [s].[Nombre], [s].[Activo], [r].[IdRol], [r].[Nombre], [r].[Activo], [u].[Activo], [u].[EsPrincipal], [u].[IdUsuarioSistema], [t].[IdObjeto], [t].[Nombre], [t].[Tipo], [t].[Url], [t].[Titulo], [t].[Icono], [t].[Activo], [t].[Orden], [t].[IdPadre], [t].[IdRolObjeto]
+FROM [UsuarioSistema] AS [u]
+INNER JOIN [Sistemas] AS [s] ON [u].[SistemaId] = [s].[IdSistema]
+INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+LEFT JOIN (
+    SELECT [o].[IdObjeto], [o].[Nombre], [o].[Tipo], [o].[Url], [o].[Titulo], [o].[Icono], [o].[Activo], [o].[Orden], [o].[IdPadre], [r0].[IdRolObjeto], [r0].[IdRol]
+    FROM [RolObjeto] AS [r0]
+    INNER JOIN [Objeto] AS [o] ON [r0].[IdObjeto] = [o].[IdObjeto]
+    WHERE [r0].[Activo] = CAST(1 AS bit) AND [o].[Activo] = CAST(1 AS bit)
+) AS [t] ON [r].[IdRol] = [t].[IdRol]
+WHERE [u].[UsuarioId] = @__userId_0
+ORDER BY [u].[IdUsuarioSistema], [s].[IdSistema], [r].[IdRol], [t].[Orden], [t].[IdRolObjeto]
+2026-01-01 18:34:37.537 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_IdOficina_Value_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__user_IdOficina_Value_0
+2026-01-01 18:34:37.538 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType6`7[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType7`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType4`9[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 18:34:37.538 -05:00 [INF] Executed action SASI.Controllers.API.AuthController.Login (SASI) in 127.7456ms
+2026-01-01 18:34:37.538 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 18:34:37.538 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - 200 null application/json; charset=utf-8 128.2933ms
+2026-01-01 18:34:37.891 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 18:34:37.891 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 18:34:37.892 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 18:34:37.896 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 18:34:37.896 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 18:34:37.897 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 5.5501ms
+2026-01-01 18:34:37.897 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 18:34:37.897 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 7.0017ms
+2026-01-01 18:34:38.358 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 18:34:38.358 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 18:34:38.358 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 18:34:38.360 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 18:34:38.361 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 18:34:38.362 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 3.6847ms
+2026-01-01 18:34:38.362 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 18:34:38.362 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 4.202ms
+2026-01-01 20:01:14.496 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - application/json 47
+2026-01-01 20:01:14.498 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 20:01:14.498 -05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SASI.Models.Requests.LoginRequest) on controller SASI.Controllers.API.AuthController (SASI).
+2026-01-01 20:01:14.562 -05:00 [INF] Executed DbCommand (18ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 20:01:14.666 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Activo], [a].[AuditFechaCreacion], [a].[AuditFechaModificacion], [a].[AuditUsuarioCreacion], [a].[AuditUsuarioModificacion], [a].[ConcurrencyStamp], [a].[DebeCambiarPassword], [a].[Email], [a].[EmailConfirmed], [a].[FechaUltimoCambioPassword], [a].[IdOficina], [a].[IntentosFallidosConsecutivos], [a].[IpCreacion], [a].[IpModificacion], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NombreCompleto], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-01-01 20:01:14.674 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[@p26='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p27='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 256), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 256), @p20='?' (Size = 4000), @p21='?' (Size = 4000), @p22='?' (DbType = Boolean), @p23='?' (Size = 4000), @p24='?' (DbType = Boolean), @p25='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [Activo] = @p1, [AuditFechaCreacion] = @p2, [AuditFechaModificacion] = @p3, [AuditUsuarioCreacion] = @p4, [AuditUsuarioModificacion] = @p5, [ConcurrencyStamp] = @p6, [DebeCambiarPassword] = @p7, [Email] = @p8, [EmailConfirmed] = @p9, [FechaUltimoCambioPassword] = @p10, [IdOficina] = @p11, [IntentosFallidosConsecutivos] = @p12, [IpCreacion] = @p13, [IpModificacion] = @p14, [LockoutEnabled] = @p15, [LockoutEnd] = @p16, [NombreCompleto] = @p17, [NormalizedEmail] = @p18, [NormalizedUserName] = @p19, [PasswordHash] = @p20, [PhoneNumber] = @p21, [PhoneNumberConfirmed] = @p22, [SecurityStamp] = @p23, [TwoFactorEnabled] = @p24, [UserName] = @p25
+OUTPUT 1
+WHERE [Id] = @p26 AND [ConcurrencyStamp] = @p27;
+2026-01-01 20:01:14.713 -05:00 [INF] Executed DbCommand (37ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[IdSistema], [s].[Nombre], [s].[Activo], [r].[IdRol], [r].[Nombre], [r].[Activo], [u].[Activo], [u].[EsPrincipal], [u].[IdUsuarioSistema], [t].[IdObjeto], [t].[Nombre], [t].[Tipo], [t].[Url], [t].[Titulo], [t].[Icono], [t].[Activo], [t].[Orden], [t].[IdPadre], [t].[IdRolObjeto]
+FROM [UsuarioSistema] AS [u]
+INNER JOIN [Sistemas] AS [s] ON [u].[SistemaId] = [s].[IdSistema]
+INNER JOIN [Roles] AS [r] ON [u].[RolId] = [r].[IdRol]
+LEFT JOIN (
+    SELECT [o].[IdObjeto], [o].[Nombre], [o].[Tipo], [o].[Url], [o].[Titulo], [o].[Icono], [o].[Activo], [o].[Orden], [o].[IdPadre], [r0].[IdRolObjeto], [r0].[IdRol]
+    FROM [RolObjeto] AS [r0]
+    INNER JOIN [Objeto] AS [o] ON [r0].[IdObjeto] = [o].[IdObjeto]
+    WHERE [r0].[Activo] = CAST(1 AS bit) AND [o].[Activo] = CAST(1 AS bit)
+) AS [t] ON [r].[IdRol] = [t].[IdRol]
+WHERE [u].[UsuarioId] = @__userId_0
+ORDER BY [u].[IdUsuarioSistema], [s].[IdSistema], [r].[IdRol], [t].[Orden], [t].[IdRolObjeto]
+2026-01-01 20:01:14.718 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_IdOficina_Value_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[IdOficina] = @__user_IdOficina_Value_0
+2026-01-01 20:01:14.720 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType6`7[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType7`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.List`1[[<>f__AnonymousType2`4[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType4`9[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-01 20:01:14.722 -05:00 [INF] Executed action SASI.Controllers.API.AuthController.Login (SASI) in 223.6571ms
+2026-01-01 20:01:14.722 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.AuthController.Login (SASI)'
+2026-01-01 20:01:14.722 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:44337/SASI/api/Auth/login - 200 null application/json; charset=utf-8 253.8568ms
+2026-01-01 20:01:15.081 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 20:01:15.082 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 20:01:15.082 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 20:01:15.086 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 20:01:15.087 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 20:01:15.087 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 4.9752ms
+2026-01-01 20:01:15.087 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 20:01:15.087 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 6.1521ms
+2026-01-01 20:01:15.587 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 20:01:15.588 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 20:01:15.588 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 20:01:15.589 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 20:01:15.590 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 20:01:15.592 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 4.3746ms
+2026-01-01 20:01:15.592 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 20:01:15.593 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 5.6606ms
+2026-01-01 20:02:25.469 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - null null
+2026-01-01 20:02:25.469 -05:00 [INF] Executing endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 20:02:25.469 -05:00 [INF] Route matched with {action = "GetActivas", controller = "OficinasApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActivas() on controller SASI.Controllers.API.OficinasApiController (SASI).
+2026-01-01 20:02:25.479 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[IdOficina], [o].[Activo], [o].[IdOficinaPadre], [o].[Nombre], [o].[Sigla]
+FROM [Oficina] AS [o]
+WHERE [o].[Activo] = CAST(1 AS bit)
+2026-01-01 20:02:25.479 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType14`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], SASI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-01 20:02:25.479 -05:00 [INF] Executed action SASI.Controllers.API.OficinasApiController.GetActivas (SASI) in 10.3391ms
+2026-01-01 20:02:25.479 -05:00 [INF] Executed endpoint 'SASI.Controllers.API.OficinasApiController.GetActivas (SASI)'
+2026-01-01 20:02:25.480 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44337/SASI/api/OficinasApi/activas - 200 null application/json; charset=utf-8 11.0032ms

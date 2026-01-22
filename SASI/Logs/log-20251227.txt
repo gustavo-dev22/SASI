@@ -1,0 +1,18 @@
+2025-12-27 11:04:51.405 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 11:04:51.412 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/ - null null
+2025-12-27 11:04:51.443 -05:00 [INF] Hosting environment: Development
+2025-12-27 11:04:51.471 -05:00 [INF] Content root path: D:\Proyectos Web\SASI
+2025-12-27 11:04:55.843 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2025-12-27 11:04:55.879 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller SASI.Controllers.CuentaController (SASI).
+2025-12-27 11:04:57.133 -05:00 [INF] Executing ViewResult, running view Login.
+2025-12-27 11:04:57.593 -05:00 [INF] Executed ViewResult - view Login executed in 463.2148ms.
+2025-12-27 11:04:57.596 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 1716.9643ms
+2025-12-27 11:04:57.596 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2025-12-27 11:04:57.659 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/ - 200 null text/html; charset=utf-8 6254.2368ms
+2025-12-27 11:04:57.661 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 11:04:57.678 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 16.638ms
+2025-12-27 11:04:57.751 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/_vs/browserLink - null null
+2025-12-27 11:04:57.949 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/_vs/browserLink - 200 null text/javascript; charset=UTF-8 198.0172ms
+2025-12-27 11:04:58.045 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44337/favicon.png - null null
+2025-12-27 11:04:58.101 -05:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'D:\Proyectos Web\SASI\wwwroot\favicon.png'
+2025-12-27 11:04:58.101 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44337/favicon.png - 200 1730 image/png 56.5686ms
