@@ -1,0 +1,240 @@
+2026-01-22 00:34:58.033 -05:00 [INF] Creating key {4e183b93-5ff6-4638-9cb4-a6d6c6a10bec} with creation date 2026-01-22 05:34:58Z, activation date 2026-01-22 05:34:57Z, and expiration date 2026-04-22 05:34:57Z.
+2026-01-22 00:34:58.133 -05:00 [WRN] No XML encryptor configured. Key {4e183b93-5ff6-4638-9cb4-a6d6c6a10bec} may be persisted to storage in unencrypted form.
+2026-01-22 00:34:58.145 -05:00 [INF] Writing data to file 'C:\claveproteccion\key-4e183b93-5ff6-4638-9cb4-a6d6c6a10bec.xml'.
+2026-01-22 00:35:00.332 -05:00 [INF] Now listening on: https://localhost:7004
+2026-01-22 00:35:00.333 -05:00 [INF] Now listening on: http://localhost:5059
+2026-01-22 00:35:00.821 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-22 00:35:00.821 -05:00 [INF] Hosting environment: Development
+2026-01-22 00:35:00.821 -05:00 [INF] Content root path: C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI
+2026-01-22 00:35:05.534 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/ - null null
+2026-01-22 00:35:05.735 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-22 00:35:05.864 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-22 00:35:06.580 -05:00 [INF] Executing ViewResult, running view Login.
+2026-01-22 00:35:07.887 -05:00 [INF] Executed ViewResult - view Login executed in 1320.448ms.
+2026-01-22 00:35:07.908 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 2002.3004ms
+2026-01-22 00:35:07.909 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-22 00:35:07.927 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/ - 200 null text/html; charset=utf-8 2407.6382ms
+2026-01-22 00:35:08.246 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-01-22 00:35:08.246 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/SASI.styles.css?v=2hI1CUQYf_TEuYesGYzRd7utCNGXmlVh7z6VwzuY2v4 - null null
+2026-01-22 00:35:08.247 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/css/site.css?v=9lJ9cOjo8Wn_LKuUNCz3oh3IWCWVLYqVf1fDFOyBN0Y - null null
+2026-01-22 00:35:08.247 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-22 00:35:08.254 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/lib/jquery/dist/jquery.min.js - null null
+2026-01-22 00:35:08.276 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-01-22 00:35:08.572 -05:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\wwwroot\css\site.css'
+2026-01-22 00:35:08.572 -05:00 [INF] Sending file. Request path: '/SASI.styles.css'. Physical path: 'C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\obj\Debug\net8.0\scopedcss\bundle\SASI.styles.css'
+2026-01-22 00:35:08.572 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/SASI.styles.css?v=2hI1CUQYf_TEuYesGYzRd7utCNGXmlVh7z6VwzuY2v4 - 200 1122 text/css 325.6982ms
+2026-01-22 00:35:08.572 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/css/site.css?v=9lJ9cOjo8Wn_LKuUNCz3oh3IWCWVLYqVf1fDFOyBN0Y - 200 2516 text/css 325.4644ms
+2026-01-22 00:35:08.573 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/js/site.js?v=4fwQrBE55Gzwg6Dlpi6bPvqcs-QU8uqNF3W_o4RLcOw - null null
+2026-01-22 00:35:08.589 -05:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\wwwroot\js\site.js'
+2026-01-22 00:35:08.589 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/js/site.js?v=4fwQrBE55Gzwg6Dlpi6bPvqcs-QU8uqNF3W_o4RLcOw - 200 1394 text/javascript 16.1964ms
+2026-01-22 00:35:08.591 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 344.2935ms
+2026-01-22 00:35:08.627 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-01-22 00:35:08.628 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/css/bootstrap.min.css - 200 162726 text/css 381.5908ms
+2026-01-22 00:35:08.639 -05:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\wwwroot\lib\jquery\dist\jquery.min.js'
+2026-01-22 00:35:08.640 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/lib/jquery/dist/jquery.min.js - 200 89503 text/javascript 386.4821ms
+2026-01-22 00:35:08.711 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-01-22 00:35:09.177 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78474 text/javascript 434.9014ms
+2026-01-22 00:35:09.737 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/favicon.png - null null
+2026-01-22 00:35:09.799 -05:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\wwwroot\favicon.png'
+2026-01-22 00:35:09.799 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/favicon.png - 200 1730 image/png 62.124ms
+2026-01-22 00:35:46.500 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7004/Cuenta/Login - application/x-www-form-urlencoded; charset=UTF-8 226
+2026-01-22 00:35:46.505 -05:00 [INF] CORS policy execution failed.
+2026-01-22 00:35:46.505 -05:00 [INF] Request origin https://localhost:7004 does not have permission to access the resource.
+2026-01-22 00:35:46.514 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-22 00:35:46.525 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-22 00:35:49.188 -05:00 [ERR] An error occurred using the connection to database '' on server ''.
+2026-01-22 00:35:49.296 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'SASI.Infraestructura.Identity.IdentityDbContext'.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-01-22 00:35:49.556 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 3030.4086ms
+2026-01-22 00:35:49.559 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-22 00:35:49.572 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   at SASI.Controllers.CuentaController.Login(String email, String password, String returnUrl) in C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\Controllers\CuentaController.cs:line 65
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22 00:35:49.678 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7004/Cuenta/Login - 500 null text/plain; charset=utf-8 3178.2881ms
+2026-01-22 00:35:55.576 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/css/site.css?v=9lJ9cOjo8Wn_LKuUNCz3oh3IWCWVLYqVf1fDFOyBN0Y - null null
+2026-01-22 00:35:55.577 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-01-22 00:35:55.577 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/SASI.styles.css?v=2hI1CUQYf_TEuYesGYzRd7utCNGXmlVh7z6VwzuY2v4 - null null
+2026-01-22 00:35:55.581 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/.well-known/appspecific/com.chrome.devtools.json - null null
+2026-01-22 00:35:55.588 -05:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2026-01-22 00:35:55.589 -05:00 [INF] The file /css/site.css was not modified
+2026-01-22 00:35:55.589 -05:00 [INF] The file /SASI.styles.css was not modified
+2026-01-22 00:35:55.589 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/css/site.css?v=9lJ9cOjo8Wn_LKuUNCz3oh3IWCWVLYqVf1fDFOyBN0Y - 304 null text/css 13.7753ms
+2026-01-22 00:35:55.590 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 12.9334ms
+2026-01-22 00:35:55.590 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/SASI.styles.css?v=2hI1CUQYf_TEuYesGYzRd7utCNGXmlVh7z6VwzuY2v4 - 304 null text/css 12.8664ms
+2026-01-22 00:35:55.610 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 28.7483ms
+2026-01-22 00:35:55.612 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7004/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2026-01-22 00:35:55.640 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - null null
+2026-01-22 00:35:55.677 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/css/bootstrap.min.css.map - null null
+2026-01-22 00:35:56.345 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2026-01-22 00:35:56.345 -05:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2026-01-22 00:35:56.345 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/css/bootstrap.min.css.map - 200 449111 text/plain 667.8993ms
+2026-01-22 00:35:56.345 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - 200 327261 text/plain 704.9589ms
+2026-01-22 00:36:00.262 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Cuenta/Login - null null
+2026-01-22 00:36:00.293 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-22 00:36:00.304 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-22 00:36:00.336 -05:00 [INF] Executing ViewResult, running view Login.
+2026-01-22 00:36:00.357 -05:00 [INF] Executed ViewResult - view Login executed in 30.3077ms.
+2026-01-22 00:36:00.357 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 52.0924ms
+2026-01-22 00:36:00.357 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-22 00:36:00.357 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Cuenta/Login - 200 null text/html; charset=utf-8 96.2998ms
+2026-01-22 00:36:00.400 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-22 00:36:00.402 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-01-22 00:36:00.404 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 1.8434ms
+2026-01-22 00:36:00.404 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/lib/jquery/dist/jquery.min.js - null null
+2026-01-22 00:36:00.404 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7004/js/site.js?v=4fwQrBE55Gzwg6Dlpi6bPvqcs-QU8uqNF3W_o4RLcOw - null null
+2026-01-22 00:36:00.404 -05:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2026-01-22 00:36:00.404 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/lib/jquery/dist/jquery.min.js - 304 null text/javascript 0.7543ms
+2026-01-22 00:36:00.404 -05:00 [INF] The file /js/site.js was not modified
+2026-01-22 00:36:00.405 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/js/site.js?v=4fwQrBE55Gzwg6Dlpi6bPvqcs-QU8uqNF3W_o4RLcOw - 304 null text/javascript 1.5503ms
+2026-01-22 00:36:00.407 -05:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-01-22 00:36:00.407 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7004/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 4.5426ms
+2026-01-22 00:36:10.146 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7004/Cuenta/Login - application/x-www-form-urlencoded; charset=UTF-8 226
+2026-01-22 00:36:10.147 -05:00 [INF] CORS policy execution failed.
+2026-01-22 00:36:10.147 -05:00 [INF] Request origin https://localhost:7004 does not have permission to access the resource.
+2026-01-22 00:36:10.147 -05:00 [INF] Executing endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-22 00:36:10.147 -05:00 [INF] Route matched with {action = "Login", controller = "Cuenta"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, System.String) on controller SASI.Controllers.CuentaController (SASI).
+2026-01-22 00:36:10.366 -05:00 [ERR] An error occurred using the connection to database '' on server ''.
+2026-01-22 00:36:10.370 -05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'SASI.Infraestructura.Identity.IdentityDbContext'.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-01-22 00:36:10.517 -05:00 [INF] Executed action SASI.Controllers.CuentaController.Login (SASI) in 369.9023ms
+2026-01-22 00:36:10.529 -05:00 [INF] Executed endpoint 'SASI.Controllers.CuentaController.Login (SASI)'
+2026-01-22 00:36:10.565 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   at SASI.Controllers.CuentaController.Login(String email, String password, String returnUrl) in C:\Users\karen\OneDrive\Documentos\Proyectos\SASI\SASI\Controllers\CuentaController.cs:line 65
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22 00:36:10.592 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7004/Cuenta/Login - 500 null text/plain; charset=utf-8 446.2451ms

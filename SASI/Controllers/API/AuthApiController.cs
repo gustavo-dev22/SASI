@@ -111,7 +111,8 @@ namespace SASI.Controllers.API
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(ClaimTypes.Email, user.Email ?? "")
+                new Claim(ClaimTypes.Email, user.Email ?? ""),
+                new Claim("nombreCompleto", user.NombreCompleto)
             };
 
             // Agregar claims personalizados por sistema
