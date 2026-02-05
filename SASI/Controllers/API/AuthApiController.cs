@@ -1,15 +1,16 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using SASI.Dominio.DTO;
 using SASI.Dominio.Modelo;
 using SASI.Dominio.Repositories;
 using SASI.Infraestructura.Identity;
 using SASI.Models.Requests;
 using SistemaConvocatorias.Infraestructura.Datos;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
 namespace SASI.Controllers.API
 {
@@ -153,28 +154,83 @@ namespace SASI.Controllers.API
                 signingCredentials: creds
             );
 
+            var idsPadreGlobales = sistemasYRoles
+                .SelectMany(sr => sr.Objetos)
+                .Where(o => o.Tipo == "Submenu" && o.IdPadre != null)
+                .Select(o => o.IdPadre.Value)
+                .Distinct()
+                .ToList();
+
+            var menusPadreGlobales = _sasiDbContext.Objetos
+                .Where(o => idsPadreGlobales.Contains(o.IdObjeto))
+                .Select(o => new ObjetoDto
+                {
+                    IdObjeto = o.IdObjeto,
+                    Nombre = o.Nombre,
+                    Tipo = o.Tipo,
+                    Url = o.Url,
+                    Titulo = o.Titulo,
+                    Icono = o.Icono,
+                    Activo = o.Activo,
+                    Orden = o.Orden,
+                    IdPadre = o.IdPadre
+                })
+                .ToList();
+
             var sistemasEstructurados = sistemasYRoles
                             .GroupBy(x => new { x.SistemaId, x.SistemaNombre, x.SistemaActivo })
                             .Select(g => new {
                                 id = g.Key.SistemaId,
                                 nombre = g.Key.SistemaNombre,
                                 activo = g.Key.SistemaActivo,
-                                roles = g.Select(r => new {
-                                    idRol = r.RolId,
-                                    nombreRol = r.RolNombre,
-                                    activo = r.UsuarioSistemaRolActivo,
-                                    esPrincipal = r.EsPrincipal,
-                                    objetos = r.Objetos.Select(o => new {
-                                        idObjeto = o.IdObjeto,
-                                        nombre = o.Nombre,
-                                        tipo = o.Tipo,
-                                        url = o.Url,
-                                        titulo = o.Titulo,
-                                        icono = o.Icono,
-                                        activo = o.Activo,
-                                        orden = o.Orden,
-                                        idPadre = o.IdPadre
-                                    }).ToList()
+                                roles = g.Select(r =>
+                                {
+                                    // 1️⃣ Objetos asignados directamente al rol
+                                    var objetosRol = r.Objetos
+                                        .Where(o => o.Activo)
+                                        .ToList();
+
+                                    // 2️⃣ Submenus del rol
+                                    var submenus = objetosRol
+                                        .Where(o => o.Tipo == "Submenu" && o.IdPadre != null)
+                                        .ToList();
+
+                                    // 3️⃣ IDs de los menús padre
+                                    var idsPadre = submenus
+                                        .Select(s => s.IdPadre.Value)
+                                        .Distinct()
+                                        .ToList();
+
+                                    // 4️⃣ Menús padre que NO están asignados pero son necesarios
+                                    var menusPadre = menusPadreGlobales
+                                        .Where(o => idsPadre.Contains(o.IdObjeto))
+                                        .ToList();
+
+                                    // 5️⃣ Unir todo
+                                    var objetosFinales = objetosRol
+                                        .Concat(menusPadre)
+                                        .DistinctBy(o => o.IdObjeto)
+                                        .Select(o => new {
+                                            idObjeto = o.IdObjeto,
+                                            nombre = o.Nombre,
+                                            tipo = o.Tipo,
+                                            url = o.Url,
+                                            titulo = o.Titulo,
+                                            icono = o.Icono,
+                                            activo = o.Activo,
+                                            orden = o.Orden,
+                                            idPadre = o.IdPadre
+                                        })
+                                        .ToList();
+
+                                    return new
+                                    {
+                                        idRol = r.RolId,
+                                        nombreRol = r.RolNombre,
+                                        activo = r.UsuarioSistemaRolActivo,
+                                        esPrincipal = r.EsPrincipal,
+                                        objetos = objetosFinales
+                                    };
                                 }).ToList()
                             }).ToList();
 

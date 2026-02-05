@@ -30,7 +30,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: CorsPolicyName, policy =>
     {
         // En desarrollo: permitir sólo el origen de tu frontend
-        policy.WithOrigins("http://127.0.0.1:8001", "http://localhost:8001", "http://127.0.0.1:8002", "http://localhost:8002")
+        policy.WithOrigins("http://127.0.0.1:8001", "http://localhost:8001", "http://127.0.0.1:8002", "http://localhost:8002", "http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod()
               // .AllowCredentials() // habilitar solo si usas cookies/autenticación por cookie

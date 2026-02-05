@@ -21,5 +21,6 @@ namespace SASI.Dominio.Repositories
         Task<int?> ObtenerRolPredeterminado(Guid idUsuario, int idSistema);
         Task ActualizarRolPrincipalAsync(Guid usuarioId, int idSistema, int nuevoRolPrincipalId);
         Task<List<UsuarioConRolesDto>> ObtenerUsuariosConRolesPorSistemaAsync(int sistemaId);
+        Task<List<UsuarioAsignadoDto>> ObtenerUsuariosPorSistemaYRolAsync(int sistemaId, string nombreRol);
     }
 }

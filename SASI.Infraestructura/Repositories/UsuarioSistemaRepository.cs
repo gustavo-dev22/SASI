@@ -287,5 +287,67 @@ namespace SASI.Infraestructura.Repositories
 
             return resultado;
         }
+
+        public async Task<List<UsuarioAsignadoDto>> ObtenerUsuariosPorSistemaYRolAsync(int sistemaId, string nombreRol)
+        {
+            // 1️⃣ Obtener asignaciones activas del sistema
+            var asignaciones = await _context.UsuarioSistemas
+                .Where(us => us.SistemaId == sistemaId && us.Activo)
+                .ToListAsync();
+
+            if (!asignaciones.Any())
+                return new List<UsuarioAsignadoDto>();
+
+            // 2️⃣ Obtener IDs de roles asignados
+            var rolIds = asignaciones
+                .Select(a => a.RolId)
+                .Distinct()
+                .ToList();
+
+            // 3️⃣ Obtener roles y filtrar por nombre
+            var roles = await _context.Roles
+                .Where(r => rolIds.Contains(r.IdRol) && r.Nombre == nombreRol)
+                .ToListAsync();
+
+            if (!roles.Any())
+                return new List<UsuarioAsignadoDto>();
+
+            var rolIdsFiltrados = roles.Select(r => r.IdRol).ToList();
+
+            // 4️⃣ Filtrar asignaciones SOLO con el rol requerido
+            var asignacionesFiltradas = asignaciones
+                .Where(a => rolIdsFiltrados.Contains(a.RolId))
+                .ToList();
+
+            // 5️⃣ Obtener usuarios (Identity)
+            var usuarioIds = asignacionesFiltradas
+                .Select(a => a.UsuarioId)
+                .Distinct()
+                .ToList();
+
+            var usuarios = await _userManager.Users
+                .Where(u => usuarioIds.Contains(u.Id))
+                .ToListAsync();
+
+            // 6️⃣ Mapear resultado
+            var resultado = asignacionesFiltradas.Select(asig =>
+            {
+                var user = usuarios.FirstOrDefault(u => u.Id == asig.UsuarioId);
+                var rol = roles.FirstOrDefault(r => r.IdRol == asig.RolId);
+
+                return new UsuarioAsignadoDto
+                {
+                    UsuarioId = asig.UsuarioId,
+                    Email = user?.Email ?? "",
+                    UserName = user?.UserName ?? "",
+                    NombreCompleto = user?.NombreCompleto ?? "",
+                    Rol = rol?.Nombre ?? "",
+                    FechaAsignacion = asig.FechaAsignacion
+                };
+            }).ToList();
+
+            return resultado;
+        }
+
     }
 }
